@@ -1,0 +1,86 @@
+@include media-md {
+
+  .portfolio {
+    padding: 100px 25px;
+  }
+
+  .introduction {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .introduction__image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .cards {
+    grid-template-columns: auto auto auto !important;
+  }
+
+  .progress-bars {
+    grid-template-columns: auto auto;
+  }
+
+  .modal__picture {
+    width: 75% !important;
+  }
+
+  .experience .item__content {
+    padding-left: .5em;
+  }
+
+  .experience .item__header {
+    font-size: 10px;
+  }
+
+  .experience .item__date {
+    font-size: 8px;
+  }
+
+  .experience .item__meta {
+    font-size: 10px;
+  }
+
+  .experience .item__description {
+    font-size: 8px;
+  }
+
+  .experience .item__label ul li {
+    font-size: 6PX;
+  }
+
+}
+
+@include media-sm {
+
+  .introduction__paragraph p {
+    font-size: 15px;
+  }
+
+  .introduction__paragraph p:nth-child(2) {
+    font-size: 25px;
+  }
+
+  .introduction__email-icon {
+    font-size: 22px;
+  }
+
+  .introduction__email-link {
+    font-size: 12px;
+  }
+
+  .cards {
+    grid-template-columns: auto !important;
+  }
+
+  .progress-bars {
+    grid-template-columns: auto;
+  }
+
+  .modal__picture {
+    width: 100% !important;
+  }
+
+}

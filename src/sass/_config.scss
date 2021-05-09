@@ -1,0 +1,86 @@
+@import 'theme';
+
+@font-face {
+  font-family: quicksand;
+  src: url(../fonts/Quicksand-Regular.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: quicksand;
+  src: url(../fonts/Quicksand-Light.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-theme-color);
+  color: var(--primary-text-color);
+  font-family: $font;
+}
+
+img.loading {
+    background: transparent url(../assets/loading.svg) no-repeat scroll center center;
+}
+
+@mixin flex {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+}
+
+@mixin flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 576px) {
+    @content
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
+@mixin media-ld {
+  @media screen and (min-width: 992px) {
+    @content
+  }
+}
+
+@mixin media-xd {
+  @media screen and (min-width: 1200px) {
+    @content
+  }
+}
+
+@mixin media-xxd {
+  @media screen and (min-width: 1400px) {
+    @content
+  }
+}

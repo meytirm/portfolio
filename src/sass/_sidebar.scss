@@ -1,0 +1,117 @@
+.side-navbar {
+  background-color: var(--primary-theme-color);
+  width: 0;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  z-index: 17;
+
+  &--open {
+    width: 300px;
+    box-shadow: -2px 0px 18px 2px var(--primary-boxshadow);
+  }
+
+  &__item {
+    transition: 0.3s all;
+
+    &:hover {
+      background-color: var(--secondary-theme-color);
+      color: var(--main-theme);
+    }
+
+    &--active {
+      background-color: var(--primary-item-active);
+      transition: unset;
+
+      :hover {
+        background-color: var(--primary-item-active);
+      }
+    }
+  }
+
+  &__link {
+    color: var(--primary-text-color);
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    padding: 15px 10px 15px 10px;
+  }
+
+  &__icon {
+    color: var(--main-theme);
+    font-size: 30px;
+    margin-right: 30px;
+  }
+}
+
+.side-navbar-btn {
+  position: relative;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  z-index: 17;
+
+  &--open {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+  }
+
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: var(--primary-icon-color);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background: var(--primary-icon-color);
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      width: 22px;
+      height: 3px;
+      background: var(--primary-icon-color);
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &--open {
+      width: 0;
+      left: 16rem;
+
+      &::after {
+        transform: rotate(45deg) translate(12px, 1px);
+        -webkit-transform: rotate(45deg) translate(12px, 1px);
+        -moz-transform: rotate(45deg) translate(12px, 1px);
+        -ms-transform: rotate(-45deg) translate(11px, 1px);
+      }
+
+      &::before {
+        width: 28px;
+        transform: rotate(-45deg) translate(11px, 1px);
+        -webkit-transform: rotate(-45deg) translate(11px, 1px);
+        -moz-transform: rotate(-45deg) translate(11px, 1px);
+        -ms-transform: rotate(-45deg) translate(11px, 1px);
+      }
+    }
+  }
+}

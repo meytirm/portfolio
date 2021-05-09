@@ -1,0 +1,54 @@
+$light-primary-theme-color: #ffffff;
+$light-secondary-theme-color: #d8d8d8;
+$light-primary-text-color: #e20078;
+$light-primary-icon-color: #a80092;
+$light-primary-boxshadow: rgb(39, 39, 39);
+$light-primary-item-active: rgb(162, 162, 162);
+$light-primary-overlay: rgba(225, 225, 225, 0.664);
+$light-primary-background: rgba(255, 255, 255, 0.856);
+$light-green: rgb(255, 30, 255);
+$light-transparent-green: rgba(133, 0, 115, 0.432);
+
+// dark
+$primary-theme-color: #000000;
+$secondary-theme-color: #272727;
+$primary-text-color: #ffffff;
+$primary-icon-color: #eeeeee;
+$primary-boxshadow: rgb(34, 34, 34);
+$primary-item-active: rgb(93, 93, 93);
+$primary-overlay: rgba(0, 0, 0, 0.664);
+$primary-background: rgba(0, 0, 0, 0.856);
+$green: rgb(0, 255, 0);
+$transparent-green: rgba(0, 42, 0, 0.432);
+
+$font: "quicksand", "ubuntu";
+
+:root {
+  --primary-theme-color: #{$primary-theme-color};
+  --secondary-theme-color: #{$secondary-theme-color};
+  --primary-text-color: #{$primary-text-color};
+  --primary-icon-color: #{$primary-icon-color};
+  --primary-boxshadow: #{$primary-boxshadow};
+  --primary-item-active: #{$primary-item-active};
+  --primary-overlay: #{$primary-overlay};
+  --primary-background: #{$primary-background};
+  --main-theme: #{$green};
+  --main-theme-transparent: #{$transparent-green};
+  --background-image: invert(0);
+  --colorfulOrGray: grayscale(100%);
+}
+
+.light-theme {
+  --primary-theme-color: #{$light-primary-theme-color};
+  --secondary-theme-color: #{$light-secondary-theme-color};
+  --primary-text-color: #{$light-primary-text-color};
+  --primary-icon-color: #{$light-primary-icon-color};
+  --primary-boxshadow: #{$light-primary-boxshadow};
+  --primary-item-active: #{$light-primary-item-active};
+  --primary-overlay: #{$light-primary-overlay};
+  --primary-background: #{$light-primary-background};
+  --main-theme: #{$light-green};
+  --main-theme-transparent: #{$light-transparent-green};
+  --background-image: invert(1);
+  --colorfulOrGray: grayscale(0);
+}
