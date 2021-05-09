@@ -19,7 +19,6 @@
   ```bash
   cd react-starter
   npm install
-  npm start
   ```
 
   - run webpack
